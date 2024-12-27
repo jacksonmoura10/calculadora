@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculadora">
+
+        <input id="input" readonly placeholder="Calculadora">
+        <div class="numeros">
+            <div class="linha1">
+                <button onclick="button('7')">7</button>
+                <button onclick="button('8')">8</button>
+                <button onclick="button('9')">9</button>
+                <button onclick="button('/')" class="botaoP">÷</button>
+            </div>
+            <div class="linha2">
+                <button onclick="button('4')">4</button>
+                <button onclick="button('5')">5</button>
+                <button onclick="button('6')">6</button>
+                <button onclick="button('*')" class="botaoP">×</button>
+            </div>
+            <div class="linha3">
+                <button onclick="button('1')">1</button>
+                <button onclick="button('2')">2</button>
+                <button onclick="button('3')">3</button>
+                <button onclick="button('-')" class="botaoP">-</button>
+            </div>
+            <div class="linha4">
+                <button onclick="inputClear()" class="botaoCE">CE</button>
+                <button onclick="button('0')">0</button>
+                <button onclick="button('.')">.</button>
+                <button onclick="calculate()" class="botaoE">=</button>
+            </div>
+            <div class="linha5">
+                <button onclick="backspace()" class="botaoCE">⌫</button>
+                <button onclick="button('+')" class="botaoP">+</button>
+            </div>
+            <div class="rodape">
+                <p>sl code <span style="color: red;">Hub</span></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
